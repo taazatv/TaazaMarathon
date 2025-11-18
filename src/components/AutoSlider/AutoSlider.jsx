@@ -1,15 +1,17 @@
+// components/AutoSlider/AutoSlider.js
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";   // ← Add this
 import "./AutoSlider.css";
 
 const images = [
-
-"/img1.jpg",
+  "/img1.jpg",
   "/img2.jpg",
   "/img3.jpg",
 ];
 
 function AutoSlider() {
   const [current, setCurrent] = useState(0);
+  const navigate = useNavigate();   // ← This lets us navigate programmatically
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,6 +20,10 @@ function AutoSlider() {
 
     return () => clearInterval(interval);
   }, []);
+
+  const handleBuyNow = () => {
+    navigate("/register");   // ← Redirects to /register
+  };
 
   return (
     <div className="hero-slider">
@@ -41,11 +47,13 @@ function AutoSlider() {
 
         <p className="hero-text">
           Mileblast Marathon 2025 is more than just a test of endurance —
-         
           it’s a celebration of human determination and resilience.
         </p>
 
-        <button className="buynow-btn">BUY NOW!</button>
+        {/* Updated Button */}
+        <button className="buynow-btn" onClick={handleBuyNow}>
+          BUY NOW!
+        </button>
       </div>
     </div>
   );
