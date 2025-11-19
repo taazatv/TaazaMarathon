@@ -7,12 +7,16 @@ import AutoSlider from './components/AutoSlider/AutoSlider';
 import CountdownSection from './components/CountdownSection/CountdownSection';
 import Form from './components/Form/Form';
 import Terms from './components/Terms/Terms';
+import Pricing from './components/Pricing/Pricing';
+import Footer from './components/Footer/Footer';
 
 // Pages
 const Home = () => (
   <>
     <AutoSlider />
     <CountdownSection />
+    <Pricing/>
+    <Footer/>
   </>
 );
 

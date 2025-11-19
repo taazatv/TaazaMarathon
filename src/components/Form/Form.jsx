@@ -1,5 +1,6 @@
 // src/components/Form/Form.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';        // ← Added
 import './Form.css';
 
 const Form = () => {
@@ -36,7 +37,15 @@ const Form = () => {
   return (
     <div className="form-wrapper">
       <div className="form-container">
-        <h2 className="title">FORM</h2>
+
+        {/* BACK TO HOME BUTTON */}
+        <div className="form-header">
+          <Link to="/" className="back-home-btn">
+            ← Back to Home
+          </Link>
+        </div>
+
+        <h2 className="title">TAZAA-MARATHON FORM</h2>
 
         <form onSubmit={handleSubmit}>
           {/* KM + Coupon */}
@@ -150,7 +159,7 @@ const Form = () => {
             </div>
           </div>
 
-          {/* BEAUTIFUL TERMS & CONDITIONS SECTION */}
+          {/* TERMS & CONDITIONS */}
           <div className="terms-section">
             <label className="checkbox-container">
               <input
@@ -167,7 +176,7 @@ const Form = () => {
             </label>
           </div>
 
-          {/* Submit Button */}
+          {/* SUBMIT BUTTON */}
           <div className="submit-btn-container">
             <button type="submit" className="submit-btn">
               Proceed to Pay

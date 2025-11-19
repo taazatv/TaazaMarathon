@@ -1,0 +1,138 @@
+/* Pricing.css - INDIAN RUPEE + MILEBLAST 2025 THEME */
+.pricing-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 100%);
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-header h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pricing-header .highlight {
+  background: #FFD60A;
+  color: #1a1a2e;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.pricing-header p {
+  font-size: 18px;
+  color: #ddd;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+}
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.ticket-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-10px);
+}
+
+.distance {
+  font-size: 52px;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.ticket-card h3 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.price-section {
+  margin: 30px 0;
+}
+
+.price-label {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.price.early {
+  color: #1a1a2e;
+}
+
+.price.normal {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.rupee {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1a1a2e;
+}
+
+.get-ticket-btn {
+  display: block;
+  background: #FFD60A;
+  color: #1a1a2e;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 50px;
+  margin-top: 30px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.get-ticket-btn:hover {
+  background: #ffcc00;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(255,214,10,0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .pricing-header h1 { font-size: 36px; }
+  .pricing-header p { font-size: 16px; }
+  .distance { font-size: 42px; }
+  .prices { font-size: 26px; flex-direction: column; gap: 10px; text-align: center; }
+  .price-label { justify-content: center; gap: 30px; }
+}

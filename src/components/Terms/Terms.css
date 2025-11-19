@@ -1,120 +1,170 @@
-/* Terms.css */
+/* Terms.css - MILEBLAST MARATHON 2025 THEME */
 .terms-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 100%);
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .terms-container {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 24px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  border: 1px solid rgba(255, 214, 10, 0.2);
 }
 
 .terms-header {
-  padding: 20px 30px;
-  background: #f8f9fa;
-  border-bottom: 1px solid #eee;
+  padding: 25px 35px;
+  background: #1a1a2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .back-btn {
-  color: #667eea;
+  color: #FFD60A;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 10px 15px;
-  border-radius: 8px;
-  transition: 0.3s;
+  font-weight: 900;
+  font-size: 17px;
+  padding: 12px 20px;
+  border: 3px solid #FFD60A;
+  border-radius: 50px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .back-btn:hover {
-  background: #667eea;
-  color: white;
+  background: #FFD60A;
+  color: #1a1a2e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 214, 10, 0.4);
 }
 
 .terms-title {
   text-align: center;
-  font-size: 32px;
-  margin: 30px 0 10px;
-  color: #333;
-  font-weight: bold;
+  font-size: 38px;
+  margin: 35px 0 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #FFD60A, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
 }
 
 .terms-updated {
   text-align: center;
   color: #888;
-  font-size: 14px;
-  margin-bottom: 30px;
+  font-size: 15px;
+  margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .terms-content {
-  padding: 0 40px 40px;
-  line-height: 1.8;
-  color: #444;
+  padding: 0 50px 50px;
+  line-height: 1.9;
+  color: #2d2d2d;
 }
 
 .term-section {
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 .term-section h2 {
-  color: #667eea;
-  font-size: 22px;
-  margin: 25px 0 15px;
-  padding-bottom: 8px;
-  border-bottom: 3px solid #667eea;
+  color: #1a1a2e;
+  font-size: 26px;
+  font-weight: 900;
+  margin: 30px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #FFD60A;
   display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.term-section p,
+.term-section li {
+  font-size: 16.5px;
+  color: #333;
+  margin-bottom: 14px;
 }
 
 .term-section ul {
-  padding-left: 20px;
-  margin: 15px 0;
+  padding-left: 25px;
+  margin: 18px 0;
 }
 
 .term-section li {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.term-section li::marker {
+  color: #FFD60A;
+  font-weight: bold;
+}
+
+.term-section strong {
+  color: #1a1a2e;
 }
 
 .contact-section a {
-  color: #667eea;
-  font-weight: bold;
+  color: #FFD60A;
+  font-weight: 900;
   text-decoration: underline;
+  font-size: 18px;
+}
+
+.contact-section a:hover {
+  color: #ffcc00;
 }
 
 .terms-footer {
   text-align: center;
-  padding: 25px;
+  padding: 30px;
   background: #1a1a2e;
   color: #aaa;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-/* Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .terms-container {
-    margin: 0 10px;
-    border-radius: 15px;
+    margin: 0 15px;
+    border-radius: 20px;
   }
   .terms-content {
-    padding: 0 25px 30px;
+    padding: 0 30px 40px;
   }
   .terms-title {
-    font-size: 28px;
+    font-size: 32px;
   }
   .term-section h2 {
-    font-size: 20px;
+    font-size: 23px;
   }
 }
 
 @media (max-width: 480px) {
   .terms-header {
-    padding: 15px 20px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .back-btn {
+    width: 100%;
+    text-align: center;
   }
   .terms-content {
-    padding: 0 20px 25px;
+    padding: 0 20px 30px;
+  }
+  .terms-title {
+    font-size: 28px;
   }
 }
