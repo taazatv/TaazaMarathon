@@ -9,10 +9,12 @@ import Form from './components/Form/Form';
 import Terms from './components/Terms/Terms';
 import Pricing from './components/Pricing/Pricing';
 import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar'
 
 // Pages
 const Home = () => (
   <>
+    <Navbar/>
     <AutoSlider />
     <CountdownSection />
     <Pricing/>

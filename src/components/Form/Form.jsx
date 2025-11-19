@@ -45,7 +45,7 @@ const Form = () => {
           </Link>
         </div>
 
-        <h2 className="title">TAZAA-MARATHON FORM</h2>
+        <h2 className="title">RUNATHON-FORM</h2>
 
         <form onSubmit={handleSubmit}>
           {/* KM + Coupon */}
