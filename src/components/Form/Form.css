@@ -122,6 +122,66 @@ input:focus, select:focus, textarea:focus {
   width: 0;
 }
 
+/* CAPTCHA & PRICE STYLING */
+.captcha-section {
+  margin: 30px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px dashed #0a1d56;
+}
+
+.captcha-section label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a1d56;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.captcha-input-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+.captcha-input-wrapper input {
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #0a1d56;
+}
+
+.refresh-captcha {
+  background: #0a1d56;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.refresh-captcha:hover {
+  background: #FFD60A;
+  color: #0a1d56;
+}
+
+.price-display {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  color: #e74c3c;
+  background: linear-gradient(90deg, #FFD60A, #ffcc00);
+  color: #0a1d56;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 30px 0;
+  box-shadow: 0 8px 25px rgba(255,214,10,0.4);
+}
+
 .checkmark {
   height: 32px;
   width: 32px;
