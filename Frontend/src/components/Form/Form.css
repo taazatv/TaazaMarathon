@@ -241,6 +241,16 @@ input:focus, select:focus, textarea:focus {
   background: #ffcc00;
   transform: translateY(-5px);
 }
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+  border: 1px solid #ffcdd2;
+}
 
 /* Mobile — 100% No Overflow */
 @media (max-width: 600px) {
